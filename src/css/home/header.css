@@ -1,0 +1,44 @@
+.header .wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 8px;
+	padding: 0 24px;
+}
+
+.home-app .header .wrapper .header-title {
+	padding-top: 100px;
+}
+
+.home-app .header .wrapper .header-title .title {
+	color: var(--white);
+	font-family: "Poppins";
+	font-size: 64px;
+	font-weight: 600;
+}
+
+.home-app .header .wrapper .header-paragraph .paragraph {
+	color: var(--greenLight);
+	font-family: "Poppins";
+	font-size: 24px;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+	.home-app .header {
+		padding-top: 100px;
+	}
+
+	.home-app .header .wrapper .header-title {
+		padding-top: 0;
+	}
+
+	.home-app .header .wrapper .header-title .title {
+		font-size: 42px;
+		line-height: 56px;
+	}
+	.home-app .header .wrapper .header-paragraph .paragraph {
+		font-size: 20px;
+	}
+}

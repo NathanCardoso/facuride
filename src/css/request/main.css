@@ -1,0 +1,37 @@
+.request-app .main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 32px 24px 32px 24px;
+	position: relative;
+	overflow: hidden;
+}
+
+.request-app .main .wrapper {
+	padding: 0 32px;
+}
+
+.request-app .main .wrapper .main-title .title {
+	font-size: 32px;
+	line-height: 48px;
+	color: #34BF98;
+	font-weight: 600;
+	text-align: center;
+}
+
+.request-app .main .wrapper .request-list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	max-width: 500px;
+	margin-top: 16px;
+	padding-bottom: 60px;
+}
+
+.request-app .main .wrapper .request-list .item-list .paragraph-list {
+	text-align: center;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 300;
+}

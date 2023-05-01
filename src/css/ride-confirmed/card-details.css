@@ -1,0 +1,111 @@
+#confirmed .main {
+	gap: 0;
+}
+
+.ride-app .ride-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	width: max-content;
+	justify-self: center;
+}
+
+.ride-app .ride-details .card-details {
+	border: 1px solid var(--gray);
+	padding: 36px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.ride-app .ride-details .card-details .image-profile {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 32px;
+}
+
+.ride-app .ride-details .card-details .image-profile img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.ride-app .ride-details .card-details .title-details .title {
+	color: var(--greenLight);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.ride-app .ride-details .card-details .content-details .driver {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+.ride-app .ride-details .card-details .content-details .driver .title-content .title {
+	font-weight: bold;
+	color: var(--grayAlt);
+}
+
+.ride-app .ride-details .card-details .content-details .driver .details-wrapper .paragraph-content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	color: var(--grayAlt);
+}
+
+.ride-app .ride-details .card-details .content-details .driver .details-wrapper .star-list {
+	display: flex;
+	margin-top: 8px;
+	gap: 8px;
+}
+
+.ride-app .ride-details .card-details .ride-faculty {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ride-app .ride-details .card-details .ride-faculty .title-details {
+ 	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.ride-app .ride-details .card-details .ride-faculty .paragraph-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.ride-app .ride-details .card-details .ride-faculty .paragraph-wrapper .paragraph-content .paragraph {
+	color: var(--grayAlt);
+}
+
+/*Button*/
+.ride-app .ride-details .button-confirmed {
+	width: 100%;
+}
+
+.ride-app .ride-details .button-confirmed .button {
+	background: var(--greenLight);
+	color: var(--white);
+	border: none;
+	border-radius: 4px;
+	width: 100%;
+	padding: 12px 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+	.ride-app .ride-details {
+		margin-top: 24px;
+	}
+}

@@ -1,0 +1,14 @@
+.home-app {
+	background: var(--blueDark);
+	min-height: 100vh;
+	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+	.home-app {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,139 @@
+.ride-header {
+	padding: 48px 24px;
+}
+
+.ride-header .wrapper {
+	display: flex;
+	align-items: center;
+	background: var(--greenLight);
+	border-radius: 8px;
+	padding: 24px 32px;
+	gap: 100px;
+	position: relative;
+}
+
+.ride-header .wrapper .logo {
+	color: var(--white);
+	font-family: "Poppins";
+	font-size: 32px;
+	font-weight: 600;	
+	padding-right: 36px;
+	border-right: 4px solid var(--white);
+}
+
+.ride-header .wrapper .navigation {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 24px;
+}
+
+.ride-header .wrapper .btn-mobile {
+	display: none;
+	position: absolute;
+	right: 48px;
+}
+
+.ride-header .wrapper .navigation .item-navigation, a {
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+.ride-header .wrapper .navigation .item-navigation .profile {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.ride-header .wrapper .navigation .item-navigation .profile .image-profile {
+	width: 44px;
+	height: 44px;
+}
+
+/*menu mobile active*/
+.ride-header.active .wrapper {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.ride-header.active .wrapper .logo {
+	padding-bottom: 16px;
+	border-bottom: 4px solid var(--white);
+}
+
+.ride-header.active .wrapper .navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	visibility: visible;
+	overflow-y: hidden;
+	height: 28vh;
+}
+
+.ride-header.active .wrapper .btn-mobile .hamburguer {
+	border-top-color: transparent;
+}
+
+.ride-header.active .wrapper .btn-mobile .hamburguer::before {
+	transform: rotate(135deg);
+}
+
+.ride-header.active .wrapper .btn-mobile .hamburguer::after {
+	transform: rotate(-135deg);
+}
+
+/*responsivo*/
+@media screen and (max-width: 1023px) {
+	.ride-header .wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0;
+		position: relative;
+	}
+	
+	.ride-header .wrapper .logo {
+		border-right: none;
+		padding-right: 0;
+	}
+
+	.ride-header .wrapper .navigation {
+		flex-direction: column;
+		align-items: flex-start;
+		transition: .6s;
+		visibility: hidden;
+		overflow-y: hidden;
+		height: 0;
+	}
+
+	.ride-header .wrapper .btn-mobile {
+		display: block;
+		padding: .5rem 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+		position: absolute;
+		right: 24px;
+	}
+
+	.ride-header .wrapper .btn-mobile .hamburguer {
+		width: 25px;
+		border-top: 2px solid;
+		display: block;
+		color: var(--white);
+	}
+
+	.ride-header .wrapper .btn-mobile .hamburguer::after, .hamburguer:before {
+		content: "";
+		display: block;
+		width: 25px;
+		height: 2px;
+		background: currentColor;
+		margin-top: 5px;
+		transition: .3s;
+	}
+}

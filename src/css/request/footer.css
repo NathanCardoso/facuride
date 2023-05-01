@@ -1,0 +1,18 @@
+.request-app .footer::before {
+	content: "";
+	background: url('../../svg/list-ride.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 600px;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	position: absolute;
+}
+
+@media screen and (max-width: 1023px) {
+	.request-app .footer::before {
+		display: none;
+	}
+}

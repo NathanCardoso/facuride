@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('subset-Poppins-Light.eot');
+    src: url('subset-Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-Poppins-Light.woff2') format('woff2'),
+        url('subset-Poppins-Light.woff') format('woff'),
+        url('subset-Poppins-Light.ttf') format('truetype'),
+        url('subset-Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('subset-Poppins-SemiBold.eot');
+    src: url('subset-Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('subset-Poppins-SemiBold.woff2') format('woff2'),
+        url('subset-Poppins-SemiBold.woff') format('woff'),
+        url('subset-Poppins-SemiBold.ttf') format('truetype'),
+        url('subset-Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,139 @@
+.ride-app .main {
+	display: grid;
+	grid-template-columns: 460px 1fr;
+	gap: 120px;
+	padding: 0 24px 68px 24px;
+}
+
+.ride-app .main .faculty-select {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-right: 32px;
+}
+
+.ride-app .main .faculty-select .button-select {
+	width: 100%;
+}
+
+.ride-app .main .faculty-select .button-select .button {
+	background: var(--greenLight);
+	color: var(--white);
+	border: none;
+	border-radius: 4px;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	width: 100%;
+}
+
+.ride-app .main .faculty-select .ride-list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 24px;
+	overflow-y: scroll;
+	max-height: 600px;
+	padding-right: 8px;
+}
+
+.ride-app .main .faculty-select .ride-list::-webkit-scrollbar {
+	width: 8px;
+}
+
+.ride-app .main .faculty-select .ride-list::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+.ride-app .main .faculty-select .ride-list::-webkit-scrollbar-thumb {
+	background: var(--greenLight);
+	border-radius: 10px;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list {
+	width: 100%;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	border-radius: 5px;
+	border: 1px solid var(--gray);
+	padding: 24px 16px;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap .item-profile {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap .item-profile img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap .item-information .information-title .title {
+	color: var(--greenLight);
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap .item-information .star-list {
+	display: flex;
+	gap: 8px;
+	padding: 0;
+	border: none;
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap .item-information .ride-information-list {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .wrap .item-information .ride-information-list .item-information-ride .paragraph {
+	font-size: 14px;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .open-car-button {
+	align-self: flex-end;
+	justify-self: flex-end;
+}
+
+.ride-app .main .faculty-select .ride-list .item-list .wrapper .open-car-button .button {
+	background: var(--greenLight);
+	color: var(--white);
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+	.ride-app .main {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+
+	.ride-app .main .faculty-select {
+		padding-right: 0;
+	}
+
+	.ride-app .main .faculty-select .ride-list .item-list .wrapper {
+		flex-direction: column;
+	}
+}

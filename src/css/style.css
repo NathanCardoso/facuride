@@ -1,0 +1,9 @@
+@import './utils/color.css';
+@import './utils//container.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/aside.css';
+@import './home/style-home.css';
+@import './request/style-request.css';
+@import './ride/style-ride.css';
+@import './ride-confirmed/style-ride-confirmed.css';

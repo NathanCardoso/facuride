@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Carona</title>
+  </head>
+  <body>
+    <div class="ride-app" id="confirmed">
+      <header class="ride-header">
+        <div class="wrapper">
+          <div class="logo">
+            <h1>FacuRide</h1>
+          </div>
+          <ul class="navigation">
+            <li class="item-navigation">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="item-navigation">
+              <a href="./request-to-ride.html">Como Solicitar</a>
+            </li>
+            <li class="item-navigation">
+              <a href="./ride.html">Solicitar Carona</a>
+            </li>
+            <li class="item-navigation">
+              <div class="profile">
+                <div class="student-profile">
+                  <p>Olá, João Pedro</p>
+                </div>
+                <div class="image-profile">
+                  <img
+                    src="./src/svg/student-profile.svg"
+                    alt="Student Profile"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+					<button class="btn-mobile">
+						<span class="hamburguer"></span>
+					</button>
+        </div>
+      </header>
+      <main class="main">
+        <aside class="ride-filter">
+          <div class="title-filter">
+            <h2 class="title">CARONAS</h2>
+          </div>
+          <div class="sub-title-filter">
+            <h3 class="sub-title">FILTROS</h3>
+          </div>
+          <form class="form-filter">
+            <input
+              class="input"
+              type="text"
+              name="final-destination"
+              id="final-destination"
+              placeholder="Destino Final"
+            />
+            <input
+              class="input"
+              type="text"
+              name="driver-courser"
+              id="driver-courser"
+              placeholder="Curso do Motorista"
+            />
+            <input
+              class="input"
+              type="text"
+              name="number-vacancies"
+              id="number-vacancies"
+              placeholder="Quantidade de Vagas"
+            />
+            <input
+              class="input"
+              type="text"
+              name="ride-value"
+              id="ride-value"
+              placeholder="Valor da Carona"
+            />
+            <input
+              class="input"
+              type="text"
+              name="car"
+              id="car"
+              placeholder="Carro"
+            />
+            <button class="submit-filter">Buscar</button>
+            <button class="clear-filter">Limpar Filtros</button>
+          </form>
+        </aside>
+        <article class="ride-details">
+          <div class="card-details">
+            <div class="image-profile">
+              <img src="./src/svg/drive-profile.svg" alt="Drive Profile" />
+            </div>
+            <div class="driver-details">
+              <div class="title-details">
+                <h2 class="title">Detalhes do Motorista</h2>
+              </div>
+              <div class="content-details">
+                <div class="driver">
+                  <div class="title-content">
+                    <h3 class="title">João Pedro de Souza Silveira</h3>
+                  </div>
+                  <div class="details-wrapper">
+                    <div class="paragraph-content">
+                      <p class="paragraph">Unilasalle-RJ</p>
+                      <p class="paragraph">Sistemas de Informação</p>
+                    </div>
+                    <ul class="star-list">
+                      <li class="star-item">
+                        <img src="./src/svg/star.svg" alt="star" />
+                      </li>
+                      <li class="star-item">
+                        <img src="./src/svg/star.svg" alt="star" />
+                      </li>
+                      <li class="star-item">
+                        <img src="./src/svg/star.svg" alt="star" />
+                      </li>
+                      <li class="star-item">
+                        <img src="./src/svg/star.svg" alt="star" />
+                      </li>
+                      <li class="star-item">
+                        <img src="./src/svg/star.svg" alt="star" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ride-faculty">
+              <div class="title-details">
+                <h2 class="title">Detalhes da Carona</h2>
+              </div>
+              <ul class="paragraph-wrapper">
+                <li class="paragraph-content">
+                  <p class="paragraph">Origem: Unilasalle-RJ</p>
+                </li>
+                <li class="paragraph-content">
+                  <p class="paragraph">Destino: Padaria Versales Itaipu</p>
+                </li>
+                <li class="paragraph-content">
+                  <p class="paragraph">Carro: Renault Kwid</p>
+                </li>
+                <li class="paragraph-content">
+                  <p class="paragraph">Placa: MSX 4033</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="button-confirmed">
+            <button class="button">Confirmar Carona ?</button>
+          </div>
+        </article>
+      </main>
+      <footer class="footer">
+        <div class="footer-paragraph">
+          <p class="paragraph">Todos os Direitos Reservados,2023</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal">
+      <div class="wrapper-modal">
+        <div class="driver-image">
+          <img src="./src/svg/drive-profile.svg" alt="Drive Profile" />
+        </div>
+        <div class="title-content">
+          <h2 class="title">Carona Confirmada</h2>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>

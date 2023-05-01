@@ -1,0 +1,14 @@
+.footer {
+	position: absolute;
+	width: 100%;
+	background: var(--blueDarkAlt);
+	padding: 16px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.footer .footer-paragraph {
+	color: var(--gray);
+	font-size: 16px;
+	text-align: center;
+}

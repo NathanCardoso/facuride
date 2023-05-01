@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Carona</title>
+  </head>
+  <body>
+    <div class="ride-app">
+      <header class="ride-header">
+        <div class="wrapper">
+          <div class="logo">
+            <h1>FacuRide</h1>
+          </div>
+          <ul class="navigation">
+            <li class="item-navigation">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="item-navigation">
+              <a href="./request-to-ride.html">Como Solicitar</a>
+            </li>
+            <li class="item-navigation">
+              <a href="./ride.html">Solicitar Carona</a>
+            </li>
+            <li class="item-navigation">
+              <div class="profile">
+                <div class="student-profile">
+                  <p>Olá, João Pedro</p>
+                </div>
+                <div class="image-profile">
+                  <img
+                    src="./src/svg/student-profile.svg"
+                    alt="Student Profile"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+					<button class="btn-mobile">
+						<span class="hamburguer"></span>
+					</button>
+        </div>
+      </header>
+			<main class="main">
+				<aside class="ride-filter">
+					<div class="title-filter">
+						<h2 class="title">CARONAS</h2>
+					</div>
+					<div class="sub-title-filter">
+						<h3 class="sub-title">FILTROS</h3>
+					</div>
+					<form class="form-filter">
+						<input class="input" type="text" name="final-destination" id="final-destination" placeholder="Destino Final">
+						<input class="input" type="text" name="driver-courser" id="driver-courser" placeholder="Curso do Motorista">
+						<input class="input" type="text" name="number-vacancies" id="number-vacancies" placeholder="Quantidade de Vagas">
+						<input class="input" type="text" name="ride-value" id="ride-value" placeholder="Valor da Carona">
+						<input class="input" type="text" name="car" id="car" placeholder="Carro">
+						<button class="submit-filter">Buscar</button>
+						<button class="clear-filter">Limpar Filtros</button>
+					</form>
+				</aside>
+				<section class="faculty-select">
+					<div class="button-select">
+						<button class="button">Selecione a sua faculdade</button>
+					</div>
+					<ul class="ride-list">
+						<li class="item-list">
+							<div class="wrapper">
+								<div class="wrap">
+									<div class="item-profile">
+										<img src="./src/svg/drive-profile.svg" alt="Drive Profile">
+									</div>
+									<div class="item-information">
+										<div class="information-title">
+											<h2 class="title">João Pedro de Sousa Silveira</h2>
+										</div>
+										<ul class="star-list">
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+										</ul>
+										<ul class="ride-information-list">
+											<li class="item-information-ride"><p class="paragraph">Curso: Sistemas de Informação</p></li>
+											<li class="item-information-ride"><p class="paragraph">Carro: Renault Kwid</p></li>
+											<li class="item-information-ride"><p class="paragraph">Placa: MSX 4035</p></li>
+											<li class="item-information-ride"><p class="paragraph">Origem: UnilaSalle-RJ</p></li>
+											<li class="item-information-ride"><p class="paragraph">Destino: Padaria Versales Itaipu</p></li>
+											<li class="item-information-ride"><p class="paragraph">Horario de saída: 22:00h</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="open-car-button">
+									<a href="./ride-confirmed.html" class="button">Entrar 1/4</a>
+								</div>
+							</div>
+						</li>
+						<li class="item-list">
+							<div class="wrapper">
+								<div class="wrap">
+									<div class="item-profile">
+										<img src="./src/svg/drive-profile.svg" alt="Drive Profile">
+									</div>
+									<div class="item-information">
+										<div class="information-title">
+											<h2 class="title">João Pedro de Sousa Silveira</h2>
+										</div>
+										<ul class="star-list">
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+										</ul>
+										<ul class="ride-information-list">
+											<li class="item-information-ride"><p class="paragraph">Curso: Sistemas de Informação</p></li>
+											<li class="item-information-ride"><p class="paragraph">Carro: Renault Kwid</p></li>
+											<li class="item-information-ride"><p class="paragraph">Placa: MSX 4035</p></li>
+											<li class="item-information-ride"><p class="paragraph">Origem: UnilaSalle-RJ</p></li>
+											<li class="item-information-ride"><p class="paragraph">Destino: Padaria Versales Itaipu</p></li>
+											<li class="item-information-ride"><p class="paragraph">Horario de saída: 22:00h</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="open-car-button">
+									<a href="./ride-confirmed.html" class="button">Entrar 1/4</a>
+								</div>
+							</div>
+						</li>
+						<li class="item-list">
+							<div class="wrapper">
+								<div class="wrap">
+									<div class="item-profile">
+										<img src="./src/svg/drive-profile.svg" alt="Drive Profile">
+									</div>
+									<div class="item-information">
+										<div class="information-title">
+											<h2 class="title">João Pedro de Sousa Silveira</h2>
+										</div>
+										<ul class="star-list">
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+										</ul>
+										<ul class="ride-information-list">
+											<li class="item-information-ride"><p class="paragraph">Curso: Sistemas de Informação</p></li>
+											<li class="item-information-ride"><p class="paragraph">Carro: Renault Kwid</p></li>
+											<li class="item-information-ride"><p class="paragraph">Placa: MSX 4035</p></li>
+											<li class="item-information-ride"><p class="paragraph">Origem: UnilaSalle-RJ</p></li>
+											<li class="item-information-ride"><p class="paragraph">Destino: Padaria Versales Itaipu</p></li>
+											<li class="item-information-ride"><p class="paragraph">Horario de saída: 22:00h</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="open-car-button">
+									<a href="./ride-confirmed.html" class="button">Entrar 1/4</a>
+								</div>
+							</div>
+						</li>
+						<li class="item-list">
+							<div class="wrapper">
+								<div class="wrap">
+									<div class="item-profile">
+										<img src="./src/svg/drive-profile.svg" alt="Drive Profile">
+									</div>
+									<div class="item-information">
+										<div class="information-title">
+											<h2 class="title">João Pedro de Sousa Silveira</h2>
+										</div>
+										<ul class="star-list">
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+										</ul>
+										<ul class="ride-information-list">
+											<li class="item-information-ride"><p class="paragraph">Curso: Sistemas de Informação</p></li>
+											<li class="item-information-ride"><p class="paragraph">Carro: Renault Kwid</p></li>
+											<li class="item-information-ride"><p class="paragraph">Placa: MSX 4035</p></li>
+											<li class="item-information-ride"><p class="paragraph">Origem: UnilaSalle-RJ</p></li>
+											<li class="item-information-ride"><p class="paragraph">Destino: Padaria Versales Itaipu</p></li>
+											<li class="item-information-ride"><p class="paragraph">Horario de saída: 22:00h</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="open-car-button">
+									<a href="./ride-confirmed.html" class="button">Entrar 1/4</a>
+								</div>
+							</div>
+						</li>
+						<li class="item-list">
+							<div class="wrapper">
+								<div class="wrap">
+									<div class="item-profile">
+										<img src="./src/svg/drive-profile.svg" alt="Drive Profile">
+									</div>
+									<div class="item-information">
+										<div class="information-title">
+											<h2 class="title">João Pedro de Sousa Silveira</h2>
+										</div>
+										<ul class="star-list">
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+										</ul>
+										<ul class="ride-information-list">
+											<li class="item-information-ride"><p class="paragraph">Curso: Sistemas de Informação</p></li>
+											<li class="item-information-ride"><p class="paragraph">Carro: Renault Kwid</p></li>
+											<li class="item-information-ride"><p class="paragraph">Placa: MSX 4035</p></li>
+											<li class="item-information-ride"><p class="paragraph">Origem: UnilaSalle-RJ</p></li>
+											<li class="item-information-ride"><p class="paragraph">Destino: Padaria Versales Itaipu</p></li>
+											<li class="item-information-ride"><p class="paragraph">Horario de saída: 22:00h</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="open-car-button">
+									<a href="./ride-confirmed.html" class="button">Entrar 1/4</a>
+								</div>
+							</div>
+						</li>
+						<li class="item-list">
+							<div class="wrapper">
+								<div class="wrap">
+									<div class="item-profile">
+										<img src="./src/svg/drive-profile.svg" alt="Drive Profile">
+									</div>
+									<div class="item-information">
+										<div class="information-title">
+											<h2 class="title">João Pedro de Sousa Silveira</h2>
+										</div>
+										<ul class="star-list">
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+											<li class="item-star">
+												<img src="./src/svg/star.svg" alt="star">
+											</li>
+										</ul>
+										<ul class="ride-information-list">
+											<li class="item-information-ride"><p class="paragraph">Curso: Sistemas de Informação</p></li>
+											<li class="item-information-ride"><p class="paragraph">Carro: Renault Kwid</p></li>
+											<li class="item-information-ride"><p class="paragraph">Placa: MSX 4035</p></li>
+											<li class="item-information-ride"><p class="paragraph">Origem: UnilaSalle-RJ</p></li>
+											<li class="item-information-ride"><p class="paragraph">Destino: Padaria Versales Itaipu</p></li>
+											<li class="item-information-ride"><p class="paragraph">Horario de saída: 22:00h</p></li>
+										</ul>
+									</div>
+								</div>
+								<dia href="./ride-confirmed.html"s="open-car-button">
+									<button class="button">Entrar 1/4</button>
+								</dia>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</main>
+      <footer class="footer">
+        <div class="footer-paragraph">
+          <p class="paragraph">Todos os Direitos Reservados,2023</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>
